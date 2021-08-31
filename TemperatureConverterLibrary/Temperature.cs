@@ -32,7 +32,7 @@ namespace TemperatureConverterLibrary
         {
             bool temperatureIsValid = (_scale == Scale.Celsium && temperature >= -273.15) ||
                                       (_scale == Scale.Kelvin && temperature >= 0.0) ||
-                                      (_scale == Scale.Fahrenheit && temperature * 9 / 5 + 32 >= 0);
+                                      (_scale == Scale.Fahrenheit && temperature >= -459.7);
             if (temperatureIsValid)
                 _temperature = temperature;
             else

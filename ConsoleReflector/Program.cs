@@ -42,8 +42,8 @@ namespace ConsoleReflector
         private static void ShowFields(Type type)
         {
             FieldInfo[] fields = type.GetFields(BindingFlags.DeclaredOnly
-                                                   | BindingFlags.Public | BindingFlags.NonPublic
-                                                   | BindingFlags.Instance | BindingFlags.Static);
+                                                | BindingFlags.Public | BindingFlags.NonPublic
+                                                | BindingFlags.Instance | BindingFlags.Static);
             if (fields != null)
             {
                 foreach (FieldInfo field in fields)

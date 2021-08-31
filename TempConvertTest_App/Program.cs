@@ -22,6 +22,8 @@ namespace TempConvertTest_App
             Console.WriteLine(temp2);
             temp3 = TemperatureConverter.ToCelsium(temp3);
             Console.WriteLine(temp3);
+            temp1 = TemperatureConverter.ToFahrenheit(temp1);
+            Console.WriteLine(temp1);
         }
     }
 }
